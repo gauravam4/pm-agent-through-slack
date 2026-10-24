@@ -1,2 +1,2 @@
 # pm-agent-through-slack
-Your PM Delegate/Peer/Laader
+Your PM Delegate/Peer/Leader
