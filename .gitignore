@@ -1,0 +1,10 @@
+node_modules
+.env
+.env.local
+.agent-serve
+memory
+
+# Synced from vendor/product-manager-skills (see scripts/sync-pm-skills.mjs)
+bot/skills/*/
+bot/skills/cmd-*.md
+!bot/skills/pm-router.md

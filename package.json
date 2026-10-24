@@ -1,0 +1,22 @@
+{
+  "name": "pm-agent-through-slack",
+  "private": true,
+  "type": "module",
+  "description": "Personal Slack PM assistant powered by Cursor Agent SDK + deanpeters Product-Manager-Skills",
+  "scripts": {
+    "postinstall": "node scripts/sync-pm-skills.mjs",
+    "sync:skills": "node scripts/sync-pm-skills.mjs",
+    "check": "tsc --noEmit",
+    "validate": "npx --yes @grok/agent-sdk@0.2.29 validate --dir .",
+    "dev": "npx --yes @grok/agent-sdk@0.2.29 serve --dir . --mode single --dev",
+    "eval": "npx --yes @grok/agent-sdk@0.2.29 eval --dir ."
+  },
+  "dependencies": {
+    "@grok/agent-sdk": "^0.2.29",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "typescript": "6.0.3"
+  }
+}
